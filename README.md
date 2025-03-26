@@ -3,7 +3,7 @@ Sample iOS project that shows how to play with Periphery a tool for detecting de
 
 
 ## Screenshots - ISP principle in Swift
-<img src="media/review.jpg" alt="Playground on action" width="300">
+<img src="media/review.jpg" alt="Playground on action" width="800">
 
 ## Requirements
 
