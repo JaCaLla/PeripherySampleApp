@@ -7,6 +7,22 @@
 
 import SwiftUI
 
+enum Types {
+    case typeA
+}
+
+func unusedFunc() {
+    
+}
+
+struct someStruct {
+    var someVar: Int
+
+    mutating func someFunc() {
+        someVar = 5
+    }
+}
+
 struct ContentView: View {
     var body: some View {
         VStack {
@@ -16,6 +32,13 @@ struct ContentView: View {
             Text("Hello, world!")
         }
         .padding()
+        .onAppear {
+            _ = someFunc(a: 3, b: "")
+        }
+    }
+    
+    func someFunc(a: Int, b: String) -> Int {
+        a + 6
     }
 }
 

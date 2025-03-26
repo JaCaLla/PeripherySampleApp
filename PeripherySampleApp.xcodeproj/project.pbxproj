@@ -52,6 +52,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2992E8FD2D94289200B9E390 /* Build configuration list for PBXNativeTarget "PeripherySampleApp" */;
 			buildPhases = (
+				2992E9002D94585B00B9E390 /* ShellScript */,
 				2992E8EB2D94289000B9E390 /* Sources */,
 				2992E8EC2D94289000B9E390 /* Frameworks */,
 				2992E8ED2D94289000B9E390 /* Resources */,
@@ -113,6 +114,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2992E9002D94585B00B9E390 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \">>>>>>>>>>>>>>> BEGIN PERIPHERY SCAN >>>>>>>>>>>>>>>>>>>>\"\n/opt/homebrew/bin/periphery scan \necho \"<<<<<<<<<<<<<<< END PERIPHERY SCAN <<<<<<<<<<<<<<<<<<<<<<\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2992E8EB2D94289000B9E390 /* Sources */ = {
@@ -254,6 +276,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"PeripherySampleApp/Preview Content\"";
 				DEVELOPMENT_TEAM = 7ZPDPWR8XU;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -283,6 +306,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"PeripherySampleApp/Preview Content\"";
 				DEVELOPMENT_TEAM = 7ZPDPWR8XU;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
